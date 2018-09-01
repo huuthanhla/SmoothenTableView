@@ -21,4 +21,9 @@ class CoinTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    
+    func configureCell(with coin: CoinElement) {
+        textLabel?.text = coin.name
+        detailTextLabel?.text = String(describing: coin.quotes?.usd?.price)
+    }
 }

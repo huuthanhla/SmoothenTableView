@@ -22,8 +22,18 @@ class PostTableViewCell: UITableViewCell {
     }
     
     func configure(with post: PostElement) {
-        textLabel?.text = post.title
+        textLabel?.text = post.title?.capitalizingFirstLetter()
         detailTextLabel?.text = post.body
     }
 
+}
+
+extension String {
+    func capitalizingFirstLetter() -> String {
+        return prefix(1).uppercased() + dropFirst()
+    }
+    
+    mutating func capitalizeFirstLetter() {
+        self = self.capitalizingFirstLetter()
+    }
 }

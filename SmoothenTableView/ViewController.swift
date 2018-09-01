@@ -25,6 +25,12 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        let spinner = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+        spinner.startAnimating()
+        spinner.frame = CGRect(x: 0, y: 0, width: postTableView.bounds.width, height: 64)
+        
+        postTableView.tableHeaderView = spinner
+        postTableView.tableHeaderView?.isHidden = false
         loadingAllData()
     }
 
@@ -64,6 +70,10 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        postTableView.tableHeaderView?.isHidden = true
+        postTableView.tableHeaderView = nil
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: PostTableViewCell.self), for: indexPath)
         
         if let postCell = cell as? PostTableViewCell {

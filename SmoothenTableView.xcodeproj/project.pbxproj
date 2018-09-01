@@ -14,6 +14,9 @@
 		14B3CECF213AF2C10017CB52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14B3CECD213AF2C10017CB52 /* LaunchScreen.storyboard */; };
 		14B3CED8213AF4350017CB52 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B3CED7213AF4350017CB52 /* Post.swift */; };
 		14B3CEDB213AF51D0017CB52 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B3CEDA213AF51D0017CB52 /* PostTableViewCell.swift */; };
+		14B3CEDD213AF8660017CB52 /* BatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B3CEDC213AF8660017CB52 /* BatchViewController.swift */; };
+		14B3CEDF213AF8F00017CB52 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B3CEDE213AF8F00017CB52 /* Coin.swift */; };
+		14B3CEE1213AF9310017CB52 /* CoinTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B3CEE0213AF9310017CB52 /* CoinTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		14B3CED0213AF2C10017CB52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14B3CED7213AF4350017CB52 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		14B3CEDA213AF51D0017CB52 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		14B3CEDC213AF8660017CB52 /* BatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchViewController.swift; sourceTree = "<group>"; };
+		14B3CEDE213AF8F00017CB52 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		14B3CEE0213AF9310017CB52 /* CoinTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,7 @@
 				14B3CED6213AF42C0017CB52 /* Model */,
 				14B3CEC4213AF2C10017CB52 /* AppDelegate.swift */,
 				14B3CEC6213AF2C10017CB52 /* ViewController.swift */,
+				14B3CEDC213AF8660017CB52 /* BatchViewController.swift */,
 				14B3CEC8213AF2C10017CB52 /* Main.storyboard */,
 				14B3CECB213AF2C10017CB52 /* Assets.xcassets */,
 				14B3CECD213AF2C10017CB52 /* LaunchScreen.storyboard */,
@@ -74,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				14B3CED7213AF4350017CB52 /* Post.swift */,
+				14B3CEDE213AF8F00017CB52 /* Coin.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -82,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				14B3CEDA213AF51D0017CB52 /* PostTableViewCell.swift */,
+				14B3CEE0213AF9310017CB52 /* CoinTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -158,10 +167,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14B3CEDF213AF8F00017CB52 /* Coin.swift in Sources */,
+				14B3CEDD213AF8660017CB52 /* BatchViewController.swift in Sources */,
 				14B3CED8213AF4350017CB52 /* Post.swift in Sources */,
 				14B3CEC7213AF2C10017CB52 /* ViewController.swift in Sources */,
 				14B3CEC5213AF2C10017CB52 /* AppDelegate.swift in Sources */,
 				14B3CEDB213AF51D0017CB52 /* PostTableViewCell.swift in Sources */,
+				14B3CEE1213AF9310017CB52 /* CoinTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
